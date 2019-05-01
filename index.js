@@ -8,9 +8,9 @@ $("#js-shopping-list-form").submit(event => {
     $("#shopping-list-entry").val("");    
 });
 
-//When check button is pressed on item, crosses out item name
+//Toggles line through item name when check is pressed
 $(".shopping-list").on("click", ".shopping-item-toggle", function(event) {
-    $(this).closest("li").find(".shopping-item").addClass("shopping-item__checked");
+    $(this).closest("li").find(".shopping-item").toggleClass("shopping-item__checked");
 });
 
 //When delete button is pressed on item. item is deleted
