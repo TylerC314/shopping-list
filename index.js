@@ -20,7 +20,8 @@ $(".shopping-list").on("click", ".shopping-item-delete", function(event) {
 
 //generates html for an item with the parameter as its name.
 function createItem(name) {
-    let item = "<li>" +
+    let item = 
+    "<li>" +
     "<span class='shopping-item'>" + name + "</span>" +
     "<div class='shopping-item-controls'>" +
       "<button class='shopping-item-toggle'>" +
